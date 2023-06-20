@@ -23,11 +23,14 @@ if (n > 0 & n < 6)
     Console.WriteLine($"{map[n]} - рабочий день");
     
 }
-else 
+else if (n == 6 | n == 7)
 {
     Console.WriteLine($"{map[n]} - выходной день");
 }
-
+else
+{
+    Console.WriteLine($"Ошибка - неверно введены данные.");
+}
 
 //////////////// с командой "switch" у меня пока только так получилось
 /*
